@@ -1,86 +1,45 @@
 package ca.vanier;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
-public class ScoreTest {
-    
+public class ScoreTest{
+    //when the case is grater than 6
     @Test
-    public void ScoreTest1() {
+    public void testResultTrue1(){
+    String args = "7";
+    boolean answer = Scores.result(args);
+    assertNotNull(answer);
+    assertTrue("Checking if scores grater than 6", answer == true);
+}
 
-        // Arrange
-        int score = 6;
+//when the case is less than 6
+@Test
+public void testResultTrue2(){
+String args = "5";
+boolean answer = Scores.result(args);
+assertNotNull(answer);
+assertTrue("Checking if scores less than 6", answer == false);
+}
 
-        // Act
-        boolean pass = Scores.isPass( score );
-
-        // Assert
-        assertEquals( pass, true );
+//when the case is grater than 6
+@Test
+    public void testResultFalse1(){
+    String args = "8";
+    boolean answer = Scores.result(args);
+    assertNotNull(answer);
+    assertFalse("Checking if scores grater than 6", answer == false);
     }
 
-    @Test
-    public void ScoreTest2() {
-
-        // Arrange
-        int score = 5;
-
-        // Act
-        boolean pass = Scores.isPass( score );
-
-        // Assert
-        assertEquals( pass, false );
-    }
-
-    @Test
-    public void ScoreTest3() {
-
-        // Arrange
-        int score = 0;
-
-        // Act
-        boolean pass = Scores.isPass( score );
-
-        // Assert
-        assertEquals( pass, false );
-    }
-
-    @Test
-    public void ScoreTest4() {
-
-        // Arrange
-        int score = -1;
-
-        // Act
-        boolean pass = Scores.isPass( score );
-
-        // Assert
-        assertEquals( pass, false );
-    }
-
-    @Test
-    public void ScoreTest5() {
-
-        // Arrange
-        int score = 10;
-
-        // Act
-        boolean pass = Scores.isPass( score );
-
-        // Assert
-        assertEquals( pass, true );
-    }
-
-    @Test
-    public void ScoreTest6() {
-
-        // Arrange
-        int score = 28397648;
-
-        // Act
-        boolean pass = Scores.isPass( score );
-
-        // Assert
-        assertEquals( pass, true );
-    }
+    //when the case is less than 6
+@Test
+public void testResultFalse2(){
+String args = "8";
+boolean answer = Scores.result(args);
+assertNotNull(answer);
+assertFalse("Checking if scores less than 6", answer == false);
+}
 }
