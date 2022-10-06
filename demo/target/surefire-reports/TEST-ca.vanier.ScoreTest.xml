@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ca.vanier.ScoreTest" time="0.064" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ca.vanier.ScoreTest" time="0.033" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.2.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\taraf\AppData\Local\Temp\surefire6378084058866673194\surefirebooter13813374416066798952.jar C:\Users\taraf\AppData\Local\Temp\surefire6378084058866673194 2022-10-06T13-13-56_218-jvmRun1 surefire15643501225753890783tmp surefire_017920167144832431787tmp"/>
+    <property name="sun.java.command" value="C:\Users\taraf\AppData\Local\Temp\surefire2112614410206233154\surefirebooter10403199062022494418.jar C:\Users\taraf\AppData\Local\Temp\surefire2112614410206233154 2022-10-06T13-18-20_755-jvmRun1 surefire5356237775959465786tmp surefire_07172977454610710944tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\Users\taraf\PassingScoreAPI\demo\target\test-classes;c:\Users\taraf\PassingScoreAPI\demo\target\classes;C:\Users\taraf\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\taraf\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\taraf\AppData\Local\Temp\surefire6378084058866673194\surefirebooter13813374416066798952.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\taraf\AppData\Local\Temp\surefire2112614410206233154\surefirebooter10403199062022494418.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.2.1+1-1"/>
@@ -56,10 +56,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="ScoreTest1" classname="ca.vanier.ScoreTest" time="0.005"/>
-  <testcase name="ScoreTest2" classname="ca.vanier.ScoreTest" time="0"/>
+  <testcase name="ScoreTest1" classname="ca.vanier.ScoreTest" time="0.004"/>
+  <testcase name="ScoreTest2" classname="ca.vanier.ScoreTest" time="0.001"/>
   <testcase name="ScoreTest3" classname="ca.vanier.ScoreTest" time="0"/>
   <testcase name="ScoreTest4" classname="ca.vanier.ScoreTest" time="0"/>
   <testcase name="ScoreTest5" classname="ca.vanier.ScoreTest" time="0"/>
-  <testcase name="ScoreTest6" classname="ca.vanier.ScoreTest" time="0.001"/>
 </testsuite>

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ca.vanier.ScoreTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in ca.vanier.ScoreTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s - in ca.vanier.ScoreTest
