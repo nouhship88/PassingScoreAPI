@@ -1,34 +1,86 @@
 package ca.vanier;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-
-public class ScoreTest 
-{
-    Scores scores = new Scores();
-
+public class ScoreTest {
+    
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        String args = "7";
-        boolean answer = scores.result(args);
-        assertNotNull(answer);
-        assertTrue("Checking if score is greater than 6", answer ==true);
-        
+    public void ScoreTest1() {
+
+        // Arrange
+        int score = 6;
+
+        // Act
+        boolean pass = Scores.isPass( score );
+
+        // Assert
+        assertEquals( pass, true );
     }
 
     @Test
-    public void shouldAnswerWithFalse()
-    {
-        String args = "9";
-        boolean answer = scores.result(args);
-        assertNotNull(answer);
-        assertFalse("Checking if score is less than 6", answer == false);
-        
+    public void ScoreTest2() {
+
+        // Arrange
+        int score = 5;
+
+        // Act
+        boolean pass = Scores.isPass( score );
+
+        // Assert
+        assertEquals( pass, false );
     }
 
+    @Test
+    public void ScoreTest3() {
+
+        // Arrange
+        int score = 0;
+
+        // Act
+        boolean pass = Scores.isPass( score );
+
+        // Assert
+        assertEquals( pass, false );
+    }
+
+    @Test
+    public void ScoreTest4() {
+
+        // Arrange
+        int score = -1;
+
+        // Act
+        boolean pass = Scores.isPass( score );
+
+        // Assert
+        assertEquals( pass, false );
+    }
+
+    @Test
+    public void ScoreTest5() {
+
+        // Arrange
+        int score = 10;
+
+        // Act
+        boolean pass = Scores.isPass( score );
+
+        // Assert
+        assertEquals( pass, true );
+    }
+
+    @Test
+    public void ScoreTest6() {
+
+        // Arrange
+        int score = 28397648;
+
+        // Act
+        boolean pass = Scores.isPass( score );
+
+        // Assert
+        assertEquals( pass, true );
+    }
 }

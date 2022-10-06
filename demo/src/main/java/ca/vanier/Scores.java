@@ -1,9 +1,13 @@
 package ca.vanier;
 
-public class Scores
-{
-    public boolean result(String score)
-    {
-      return Double.parseDouble(score) > 6;
+public final class Scores {
+
+    /**
+     * This method checks to see if the given score is considered to be a pass.
+     * @param score the score to check.
+     * @return {@code true} if the score is a pass, {@code false} otherwise.
+     */
+    public static boolean isPass( int score ) {
+        return score > 5;
     }
 }
